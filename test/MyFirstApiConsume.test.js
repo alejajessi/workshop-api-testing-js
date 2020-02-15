@@ -26,7 +26,6 @@ describe('First Api Tests', () => {
     expect(response.body.args).to.eql(query);
   });
   
-  
   it('Consume PATCH  Service', async () => {
     const response = await agent.patch('https://httpbin.org/patch');
   
@@ -47,6 +46,5 @@ describe('First Api Tests', () => {
     expect(response.status).to.equal(statusCode.OK);
     expect(response.body).to.have.property('origin');
   });
-  
 
 });
