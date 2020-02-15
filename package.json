@@ -1,7 +1,7 @@
 {
   "name": "workshop-api-testing",
   "version": "1.0.0",
-  "description": "jessica repo",
+  "description": " 	This is a Workshop about Api Testing in JavaScript",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/alejajessi/workshop-api-testing-js.git"
   },
-  "author": "",
+  "author": "Jessica Alejandra Sánchez Melo  alejandra122098@gmail.com alejajessi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alejajessi/workshop-api-testing-js/issues"
