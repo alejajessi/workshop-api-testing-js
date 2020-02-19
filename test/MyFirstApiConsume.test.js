@@ -47,4 +47,12 @@ describe('First Api Tests', () => {
     expect(response.body).to.have.property('origin');
   });
 
+  it('Consume HEAD Service', async () => {
+    const response = await agent.head('https://httpbin.org/get');
+  
+    expect(response.status).to.equal(statusCode.OK);
+    //expect(response.body).to.have.property('origin');
+    //Se puede hacer uso de peticiones head con las que son get pero el response.body será vacío
+  });
+
 });
