@@ -51,7 +51,8 @@ describe('First Api Tests', () => {
     const response = await agent.head('https://httpbin.org/get');
   
     expect(response.status).to.equal(statusCode.OK);
-    //expect(response.body).to.have.property('origin');
+    expect(response).to.have.property('header');
+    //expect(response.header).to.equal()
     //Se puede hacer uso de peticiones head con las que son get pero el response.body será vacío
   });
 
