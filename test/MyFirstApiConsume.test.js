@@ -52,8 +52,5 @@ describe('First Api Tests', () => {
   
     expect(response.status).to.equal(statusCode.OK);
     expect(response).to.have.property('header');
-    //expect(response.header).to.equal()
-    //Se puede hacer uso de peticiones head con las que son get pero el response.body será vacío
   });
-
 });
