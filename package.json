@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -t 5000"
+    "test": "mocha -t 5000 --reporter mochawesome --reporter-options reportDir=report,reportFilename=ApiTesting"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "mocha": "^7.0.1"
   },
   "dependencies": {
+    "mochawesome": "^4.1.0",
     "superagent": "^5.2.1",
     "superagent-promise": "^1.1.0"
   }
