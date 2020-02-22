@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -t 5000 --reporter mochawesome --reporter-options reportDir=report,reportFilename=ApiTesting"
+    "test": "mocha -t 5000 --reporter mochawesome --reporter-options reportDir=report,reportFilename=ApiTesting",
+    "lint" : "eslint ./test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,9 @@
     "mocha": "^7.0.1"
   },
   "dependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
     "mochawesome": "^4.1.0",
     "superagent": "^5.2.1",
     "superagent-promise": "^1.1.0"
