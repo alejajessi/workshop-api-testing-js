@@ -4,6 +4,7 @@ const { expect } = require('chai');
 
 const urlBase = 'https://api.github.com';
 const githubUserName = 'alejajessi';
+const textDescription="This is a Workshop about Api Testing in JavaScript";
 const repository = 'workshop-api-testing-js';
 
 describe('Github Api Test', () => {
@@ -14,7 +15,7 @@ describe('Github Api Test', () => {
         .set('User-Agent', 'agent');
       
       expect(response.status).to.equal(statusCode.OK);
-      expect(response.body.description).equal('This is a Workshop about Api Testing in JavaScript');
+      expect(response.body.description).equal(textDescription);
     });
   });
 });
@@ -25,5 +26,5 @@ it('Via OAuth2 Tokens by parameter', () =>
     .set('User-Agent', 'agent')
     .then((response) => {
       expect(response.status).to.equal(statusCode.OK);
-      expect(response.body.description).equal('This is a Workshop about Api Testing in JavaScript');
+      expect(response.body.description).equal(textDescription);
     }));
