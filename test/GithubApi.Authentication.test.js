@@ -17,10 +17,8 @@ describe('Github Api Test', () => {
       expect(response.status).to.equal(statusCode.OK);
       expect(response.body.description).equal(textDescription);
     });
-  });
-});
- 
-it('Via OAuth2 Tokens by parameter', () =>
+
+    it('Via OAuth2 Tokens by parameter', () =>
   agent.get(`${urlBase}/repos/${githubUserName}/${repository}`)
     .query(`access_token=${process.env.ACCESS_TOKEN}`)
     .set('User-Agent', 'agent')
@@ -28,3 +26,7 @@ it('Via OAuth2 Tokens by parameter', () =>
       expect(response.status).to.equal(statusCode.OK);
       expect(response.body.description).equal(textDescription);
     }));
+
+  });
+});
+ 
