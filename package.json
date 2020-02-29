@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": " lint && mocha -t 5000 --reporter mochawesome --reporter-options reportDir=report,reportFilename=ApiTesting",
+    "test": "lint && mocha -t 5000 --reporter mochawesome --reporter-options reportDir=report,reportFilename=ApiTesting",
     "lint": "eslint ./test/**/*.js"
   },
   "repository": {
